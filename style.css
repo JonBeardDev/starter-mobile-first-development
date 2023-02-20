@@ -34,22 +34,30 @@ img {
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 20px;
+  margin-bottom: 80px;
 }
 
 .img-group {
-  display: flex;
-  flex-direction: row;
   background-color: #5c4f41;
 }
 
 .item {
   flex: 1;
-  flex-direction: column;
   padding: 20px;
 }
 
 .item-double {
   flex: 2;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
